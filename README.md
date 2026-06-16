@@ -2,15 +2,18 @@
 
 Este repositorio contiene ejercicios prácticos de **Algoritmos y Estructuras de Datos** preparados para ser resueltos en **C++**.
 
-La idea es simple:
+Los ejercicios están organizados por tema y preparados para que puedas enfocarte exclusivamente en el algoritmo solicitado.
 
-* Abrís un ejercicio.
-* Leés el enunciado.
-* Completás únicamente la parte indicada.
-* Compilás y ejecutás.
-* Verificás el resultado.
+Cada archivo incluye:
 
-Todo el código auxiliar ya se encuentra preparado para que puedas concentrarte en el algoritmo y no en la infraestructura.
+* Estructuras (`struct`) ya definidas.
+* Datos de prueba ya cargados.
+* Funciones auxiliares cuando son necesarias.
+* Salidas preparadas para verificar el resultado.
+
+Tu tarea consiste únicamente en completar la sección indicada dentro del código.
+
+---
 
 # Estructura del repositorio
 
@@ -22,15 +25,20 @@ cpp-ejercicios-aed/
 ├── docs/
 │   ├── instalacion-vscode.md
 │   ├── instalar-compilador.md
+│   ├── instalar-git.md
 │   └── primeros-pasos.md
 │
-├── ejercicios/
-│   ├── vectores/
-│   ├── busqueda/
-│   ├── corte_control/
-│   └── apareo/
-│
-└── templates/
+└── ejercicios/
+    │
+    └── arrays/
+        │
+        ├── README.md
+        │
+        ├── ordenamiento/
+        │   ├── README.md
+        │   ├── O-01.cpp
+        │   ├── O-02.cpp
+        │   └── O-03.cpp
 ```
 
 ---
@@ -53,93 +61,79 @@ cd cpp-ejercicios-aed
 
 Luego abrí la carpeta con Visual Studio Code.
 
+Si todavía no configuraste tu entorno, consultá la carpeta `docs/`.
+
 ---
 
 # Cómo resolver un ejercicio
 
-## 1. Elegir un ejercicio
+## 1. Elegir un tema
 
 Por ejemplo:
 
 ```text
-ejercicios/vectores/O-1_tabla_posiciones
+ejercicios/arrays/ordenamiento
 ```
 
 ## 2. Leer el enunciado
 
-Cada ejercicio contiene un README propio con:
+Cada tema posee un archivo `README.md` que contiene todos los ejercicios asociados.
 
-* descripción del problema
-* aclaraciones
-* ejemplos
-* restricciones
+Por ejemplo:
 
-## 3. Completar el código
+```text
+ejercicios/arrays/ordenamiento/README.md
+```
 
-Dentro de `main.cpp` encontrarás una sección similar a:
+## 3. Abrir el ejercicio
+
+Por ejemplo:
+
+```text
+O-01.cpp
+```
+
+## 4. Completar el algoritmo
+
+Dentro del archivo encontrarás una sección similar a:
 
 ```cpp
-// ============================================================
-// TU CÓDIGO VA AQUÍ
-// ============================================================
+// ====================================================
+// TU CODIGO VA AQUI
+// ====================================================
 
-// Resolver el ejercicio aquí
 
-// ============================================================
-// FIN DE TU CÓDIGO
-// ============================================================
+
+// ====================================================
+// FIN DE TU CODIGO
+// ====================================================
 ```
 
 Intentá modificar únicamente esa sección.
 
-## 4. Compilar y ejecutar
+## 5. Compilar y ejecutar
 
-Desde la terminal:
+Consultá la guía:
 
-```bash
-g++ main.cpp -o programa
-programa.exe
+```text
+docs/primeros-pasos.md
 ```
 
-También podés utilizar las herramientas integradas de Visual Studio Code.
+para ver las distintas formas de compilar y ejecutar los programas.
 
 ---
 
-# Organización de los ejercicios
+# Objetivo del repositorio
 
-Los ejercicios están agrupados según el patrón algorítmico que practican.
+El objetivo principal es practicar patrones algorítmicos clásicos utilizados habitualmente en la materia Algoritmos y Estructuras de Datos.
 
-| Tema             | Conceptos                             |
-| ---------------- | ------------------------------------- |
-| Vectores         | Inserción, eliminación, ordenamientos |
-| Búsqueda         | Secuencial y binaria                  |
-| Corte de control | Procesamiento por grupos              |
-| Apareo           | Fusión de estructuras ordenadas       |
-
----
-
-# Soluciones
-
-Las soluciones de referencia se encuentran separadas de los ejercicios para fomentar la resolución individual antes de consultar una posible implementación.
-
-Se recomienda intentar resolver cada ejercicio antes de revisar una solución.
-
----
-
-# Documentación
-
-La carpeta `docs/` contiene guías paso a paso para:
-
-* instalar Visual Studio Code
-* instalar un compilador de C++
-* configurar el entorno
-* compilar y ejecutar programas
+Por ese motivo, los ejercicios ya incluyen los datos de prueba y la infraestructura necesaria para ejecutarlos, permitiendo concentrarse en la resolución del problema y no en tareas accesorias.
 
 ---
 
 # Contribuciones
 
-Si encontrás errores en un enunciado, en el código base o en la documentación, podés abrir un issue o enviar un pull request.
+Si encontrás errores en los enunciados, en los datos de prueba o en el código base, podés abrir un issue o enviar un pull request.
 
 Toda colaboración es bienvenida.
 
